@@ -1,0 +1,278 @@
+@import url('style.css');
+@import url('https://css.gg/menu-grid-r.css');
+@import url('https://css.gg/menu.css');
+
+body {
+	font-family: arial, sans-serif;
+	height: 100vh;
+}
+/* Top Nav Styling Starts Here */
+header {
+	position: relative;
+	padding: 15px 10px;
+}
+header nav {
+	position: absolute;
+	right: 25px;
+}
+header nav ul {
+	display: inline-block;
+}
+li {
+	display: inline;
+text-align:center;
+}
+header nav li a {
+	text-decoration: none;
+	font-size: 13px;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 0.87);
+	padding: 5px;
+	line-height: 20px;
+	margin: 0 1px;
+
+}
+
+ 
+.hidden {
+	display: none;
+}
+.top-nav:hover {
+	text-decoration: underline;
+}
+.gg-menu-grid-r {
+	display: inline-block !important; /* removes the default display block from the icon*/
+	padding-top: 5px;
+	margin: 0 5px;
+	color:grey;
+}
+
+.gg-menu-grid-r:hover{
+color:black;
+}
+.top-nav-button {
+	display: inline-block;
+	line-height: 28px;
+	color: #ffffff;
+	background-color: #4583ec;
+	padding: 0px 12px;
+	margin: 0 5px;
+	font-weight: 700;
+	border: 1px solid #4583ec;
+	border-radius: 2px;
+}
+/* Top Nav Styling Ends Here */
+.content {
+	margin: 125px 0;
+	text-align: center;
+}
+.content img {
+	margin: 12px auto; /* centers the google logo horizontally */
+}
+/* Styling search field */
+main .content div {
+	border: 1px solid #eaeaeb;
+	width: max-content;
+	margin: 0 auto;
+	padding: 0 20px;
+	border-radius: 25px;
+}
+input[type="search"] {
+	padding: 10px;
+	padding-left:160px;
+	padding-right:140px;
+	margin: 4px 22px;
+	border: none;
+}
+main .content div:hover {
+	box-shadow: 1px 1px 5px #c9c6c6;
+}
+input[type="search"]:focus {
+	outline: none;
+}
+.fa-search {
+	opacity: 0.3;
+	font-size:14px;
+}
+
+.fa-microphone{
+	opacity:0.6;
+	font-size:18px;
+	margin-right:2px;
+}
+
+/* Styling the search buttons */
+input[type="submit"] {
+	background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5F6368;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+	user-select: none;
+	margin-top:14px;
+}
+input[type="submit"]:hover {
+	border: 1px solid #c9c7c7;
+	color: #222222;
+}
+/* Styling the body navigations */
+main p a {
+	text-decoration: none;
+	font-size: 13px;
+	font-weight: 400;
+	color: #1a0dab;
+}
+main p a:hover {
+	text-decoration: underline;
+}
+main p {
+	margin-top: 25px;
+	margin-bottom: 32px;
+}
+main p span {
+	font-size: 13px;
+	font-weight: 400;
+	color: #222222;
+	line-height: 28px;
+ 
+}
+
+main p a {
+	margin-left:6px;
+}
+
+/* styling the footer and it's content */
+footer{
+	position:sticky;
+	left:0;
+	right:0;
+    bottom:-10px;
+	
+	background-color: #f2f2f2;
+}
+
+footer p {
+	padding: 12px 31px;
+	color: #0000008a;
+	font-size: 15px;
+	font-weight: 400;
+	border-top: 1px solid rgba(206, 206, 207, 0.4);
+	border-bottom: 1px solid rgba(206, 206, 207, 0.4);
+}
+footer .end{
+	width:100%;
+	position:absolute;
+	display: flex;
+	justify-content:space-between;
+	background-color:#f2f2f2;
+}
+footer nav li a {
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 400;
+	color: #5f6368;
+	padding: 5px;
+	line-height: 40px;
+}
+
+footer nav li a:hover {
+	text-decoration: underline;
+}
+footer .leftnav ul {
+	float: left;
+	padding-left: 25px;
+}
+footer .rightnav ul {
+	float: right;
+	padding-right: 25px;
+}
+footer .leftnav li a {
+	padding-right: 18px; /* Adds appropriate spacing between the footer links */
+}
+footer .rightnav li a , footer .rightnav1 li a{
+	padding-left: 18px; /* Adds appropriate spacing between the footer links */
+}
+@media screen and (max-width: 484px) {
+	header nav {
+		position: static;
+	}
+	.hidden {
+		display: initial;
+	}
+
+	.hidden-1{
+		display:none;
+	}
+	.gg-menu {
+		display: inline-block !important;
+	}
+	.hidden-mobile {
+		display: none;
+	}
+	header nav li a {
+		text-transform: uppercase;
+	}
+	.nav-links{
+		color: blue;
+	}
+	.mobile-left {
+		float: left;
+	}
+	.mobile-right {
+		float: right;
+	}
+	.top-nav-button {
+		background-color: #f2f2f2;
+		color: #222222;
+		border: 1px solid #c9c7c7;
+		font-weight: 400;
+	}
+	input[type="search"] {
+		padding: 5px 25px;
+	}
+
+	.fa-search{
+		margin-left:-5px;
+	}
+
+	.fa-microphone{
+		margin-right:-5px;
+	}
+
+	.content img{
+		width:38%;
+		
+	}
+	main p span {
+		display:block;
+		margin-top:-20px;
+	}
+
+	main p a{
+		display:inline-block;
+		padding-bottom:8px;
+		margin-top:2px;
+		
+	}
+	
+
+	.end{
+		display:flex;
+		flex-direction:column-reverse;
+		align-items:center;
+		justify-content: center;
+
+	}
+	
+	
+
+	
+}
